@@ -72,7 +72,7 @@
 ];
         var MoodContract;
         var signer;
-        provider.listAccount().then(function(accounts){
+        provider.listAccounts().then(function(accounts){
             signer = provider.getSigner(accounts[0]);
             MoodContract = new ethers.Contract(
                 MoodContractAddress,
